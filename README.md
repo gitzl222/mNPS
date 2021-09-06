@@ -1,7 +1,5 @@
 # mNPS
-asdf adf a
-adsf asd 
-adsf asdf
+123 	236	25	
 
 
 
