@@ -8,12 +8,14 @@ result=sys.argv[3]
 outfile=open(result,'w')
 dct={}
 prot=open(name,'r').readlines()
+#To extract bacterial species names from RefSeq bacterial database
 for line in prot:
 	linelist=line[:-1].split(' ')
 	geneid=linelist[0][1:]
 	name=' '.join(linelist[1:])
 	dct[geneid]=name
 Infile=open(filter,'r').readlines()
+#To replace the subject id in XX.blast.txt by bacterial species names
 for line in Infile:
 	if line[0]=="#":
 		pass
