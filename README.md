@@ -1,5 +1,5 @@
 
-Speedy carding and keywords extraction of Blastn result files\
+** Speedy carding and keywords extraction of Blastn result files
 * The blast.filter.py is used to extract bacterial species names from RefSeq bacterial database which matched to the Query id in Blastn result files firstly and write Subject id, species name, Query id and other informations including % identity, alignment length et al. into XX_py.blast.txt.\
 Usage: python blast.filter.py XX.blast.txt bac.name.txt XX_py.blast.txt\
 grep “>” bac.fasta > bac.name.txt   #preparation of bac.name.txt
