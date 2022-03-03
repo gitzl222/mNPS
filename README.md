@@ -6,7 +6,7 @@ Usage: python blast.filter.py XX.blast.txt bac.name.txt XX_py.blast.txt\
      *grep “>” bac.fasta > bac.name.txt   #preparation of bac.name.txt
 * Furthermore, the unique.py is used to filter out the best match which have a highest reads identity of unique Subject id and output XX.result.txt.\
 Usage: python unique.py XX_py.blast.txt XX.result.txt
-* the XX.result.txt and following command are used to the final statistics of names and number of matched bacterial species reads:\
+* the XX.result.txt and following commands are used to the final statistics of names and number of matched bacterial species reads:\
   cut -f2 XX.result.txt |sort >XX.final.txt\
   cut -f1,2 -d ‘’ XX.final.txt |sort |uniq -c|sort -k 1 -n -r >XX.output
 
